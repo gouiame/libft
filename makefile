@@ -5,7 +5,7 @@
 #                                                     +:+ +:+         +:+      #
 #    By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/23 11:34:42 by hed-dyb           #+#    #+#              #
+#    Created: 2022/10/23 11:34:42 by cgouiame           #+#    #+#              #
 #    Updated: 2022/11/09 17:58:32 by cgouiame         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -41,5 +41,3 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-.PHONY: all bonus clean fclean re
