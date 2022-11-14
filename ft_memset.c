@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 13:36:53 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/11 18:03:49 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/14 17:19:35 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	ch;
-	char			*str1;
+	unsigned char	*str1;
 	size_t			i;
 
-	str1 = (char *) str;
+	str1 = (unsigned char *) str;
 	ch = (unsigned char) c;
 	i = 0;
 	while (i < n)

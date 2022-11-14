@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:27:37 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/09 18:52:57 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/14 19:15:33 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	if (!dst && !src)
 		return (0);
+	if (dst == src)
+		return (dst);
 	while (i < n)
 	{
 		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];

@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 15:36:05 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/07 12:28:04 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/14 18:45:50 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || !f)
 	{	
 		return ;
 	}

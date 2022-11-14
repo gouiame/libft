@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:00:17 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/10 20:23:01 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/14 21:30:32 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,8 @@ int	ft_atoi(const char *str)
 	}
 	num *= count;
 	return (num);
+}
+int main()
+{
+	printf("%d",ft_atoi("	 	-68"));
 }

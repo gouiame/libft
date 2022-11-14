@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:02:00 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/06 18:00:48 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/13 16:09:01 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	srcsize = ft_strlen(src);
 	i = 0;
-	if (!dst || !src)
-		return (0);
 	if (dstsize == 0)
 		return (srcsize);
 	while (src[i] != '\0' && i < dstsize - 1)

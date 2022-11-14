@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 14:08:57 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/08 19:00:23 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/14 18:44:54 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || !f)
 		return (NULL);
 	str = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (str == NULL)

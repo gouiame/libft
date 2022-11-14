@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 CC = cc
-FLAGS = -Wall -Werror -Wextra -I libft.h
+FLAGS = -Wall -Werror -Wextra
 AR = ar cr
 RM = rm -f
 FILES = ft_isalpha.c ft_isdigit.c  ft_isascii.c ft_strlen.c \
