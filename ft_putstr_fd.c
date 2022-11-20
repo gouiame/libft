@@ -6,11 +6,10 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 12:47:25 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/06 18:43:17 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:18:04 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

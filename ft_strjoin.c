@@ -6,7 +6,7 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 16:41:00 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/07 12:42:40 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/15 18:54:25 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	if (!s1)
-		return ((char *)s2);
+	if (!s1 || !s2)
+		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	p = malloc(len);
 	if (p == NULL)

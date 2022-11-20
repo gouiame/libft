@@ -6,12 +6,11 @@
 /*   By: cgouiame <cgouiame@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 13:57:30 by cgouiame          #+#    #+#             */
-/*   Updated: 2022/11/08 21:44:16 by cgouiame         ###   ########.fr       */
+/*   Updated: 2022/11/16 23:54:16 by cgouiame         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static char	**free_memory(char **p)
 {
@@ -24,7 +23,8 @@ static char	**free_memory(char **p)
 		n++;
 	}
 	free (p);
-	return (0);
+	p = NULL;
+	return (p);
 }
 
 static size_t	words_counter(char const *str, char c)
@@ -38,7 +38,7 @@ static size_t	words_counter(char const *str, char c)
 		i++;
 	while (str[i] != '\0')
 	{
-		if (str[i + 1] == '\0' || (str[i] == c && str[i + 1] != c))
+		if ((str[i] == c && str[i + 1] != c) || str[i + 1] == '\0' )
 			counter++;
 		i++;
 	}
@@ -73,16 +73,3 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
-
-// int main()
-// {
-// 	char **tab;
-// 	int i;
-// 	tab = ft_split("     hello 1337 khouribga benguerir  !", ' ');
-// 	i = 0;
-// 	while (i < 6)
-// 	{
-// 		printf ("tab[%d] = %s\n", i,tab[i]);
-// 		i++;
-// 	}
-// }
